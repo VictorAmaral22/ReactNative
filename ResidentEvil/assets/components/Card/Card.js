@@ -5,14 +5,14 @@ export default Card = (props) => {
     return(
         <View style={styles.mainView}>
             <Image style={styles.image} source={{ uri: props.image}}></Image>
-            <Text style={styles.text} >{props.name }</Text>
+            <Text style={styles.text} >{props.name}</Text>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     mainView: {
-        width: '45%',
+        width: 210,
         borderWidth: 1,
         borderRadius: 10,
         alignItems: 'center',
@@ -26,6 +26,8 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 10
     },
     text: {
+        paddingTop: 5,
+        paddingBottom: 5,
         fontSize: 18
     }
 })
